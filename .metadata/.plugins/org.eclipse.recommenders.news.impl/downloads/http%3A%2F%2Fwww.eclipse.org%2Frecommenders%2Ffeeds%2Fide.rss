@@ -253,9 +253,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="row">
           <div class="col-sm-24">
             
-            <h2 class='margin-top-30'><strong>The Eclipse IDE 2020-09 is now available!</strong></h2>
-            <p></p>
-            <a class='btn btn-primary btn-lg' href='https://www.eclipse.org/eclipseide'>Download Now</a>
+            <h2 class='margin-top-30'><strong>JakartaOne Livestream 2020</strong></h2>
+            <p>Don't miss the largest Jakarta EE event of 2020, join us on December 8.</p>
+            <a class='btn btn-primary btn-lg' href='https://jakartaone.org/2020/'>Register Now</a>
           </div>
           
         </div>
@@ -314,7 +314,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/eclipse.org-common/themes/solstice/public/javascript/main.min.js?var=1.9"></script>
+<script src="/eclipse.org-common/themes/solstice/public/javascript/main.min.js?var=0.0.116"></script>
 
 </body>
 </html>

@@ -2,12 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="wrkbk" key="selection"/>
+		<item value="deque" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="pq1"/>
+			<item value="tree"/>
+			<item value="hs2"/>
+			<item value="hs1"/>
+			<item value="hash"/>
+			<item value="vector"/>
 			<item value="guru99Workbook"/>
 			<item value="Members"/>
 			<item value="guru99Sheet"/>
@@ -18,6 +24,11 @@
 			<item value="min"/>
 		</list>
 		<list key="replacehistory">
+			<item value="deque"/>
+			<item value="Tree"/>
+			<item value="ts2"/>
+			<item value="ts1"/>
+			<item value="tree"/>
 			<item value="wrkbk"/>
 			<item value="sheet"/>
 			<item value="fis"/>
