@@ -2,6 +2,8 @@ package loopsDemo;
 
 import java.util.Scanner;
 
+//Co prime numbers are those whose HCF is 1
+
 public class CoPrimeNumbers {
 
 	public static void main(String[] args) {
@@ -24,8 +26,6 @@ public class CoPrimeNumbers {
 				c=1;
 			
 		}
-		
-		//Co prime numbers are those whose HCF is 1
         
 		if(c==0) {
 			

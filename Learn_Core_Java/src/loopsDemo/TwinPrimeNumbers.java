@@ -2,6 +2,8 @@ package loopsDemo;
 
 import java.util.Scanner;
 
+//Twin prime no.s are the prime no.s whose difference is 2, e.g. (11,13),(17,19) etc
+
 public class TwinPrimeNumbers {
 
 	public static void main(String[] args) {
@@ -39,8 +41,6 @@ public class TwinPrimeNumbers {
 			}
 			
 		}
-
-		//Twin prime no.s are the prime no.s whose difference is 2,e.g. (11,13),(17,19) etc
         
 		if((c==0)&&(d==0)) {
 			

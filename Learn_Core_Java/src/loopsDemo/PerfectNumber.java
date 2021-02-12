@@ -2,6 +2,11 @@ package loopsDemo;
 
 import java.util.Scanner;
 
+/*
+Any number can be a Java Perfect Number if the sum of its positive divisors excluding the number itself is equal to that number.
+Factors of 6=1,2,3 & also 6=1+2+3. So 6 is a perfect no.
+*/
+
 public class PerfectNumber {
 
 	public static void main(String[] args) {
@@ -21,8 +26,6 @@ public class PerfectNumber {
 			}
 			
 		}
-		
-		//Factors of 6=1,2,3 & also 6=1+2+3. So 6 is a perfect no.
 		
 		if(s==number) {
 			System.out.printf("The number %d is perfect", number);

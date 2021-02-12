@@ -2,6 +2,8 @@ package loopsDemo;
 
 import java.util.Scanner;
 
+//153 is an Armstrong no. because 1^3+5^3+3^3=153. More example:- 370,371,407
+
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {
@@ -23,8 +25,6 @@ public class ArmstrongNumber {
 			d/=10;
 			
 		}
-		
-		//153 is an Armstrong no. because 1^3+5^3+3^3=153. More example:- 370,371,407
 		
 		if(s == number) {
 			System.out.println("The number "+number+" is an armstrong number");
