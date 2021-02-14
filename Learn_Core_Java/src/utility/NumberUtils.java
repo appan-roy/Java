@@ -2,19 +2,24 @@ package utility;
 
 public class NumberUtils {
 
+	public boolean isEven(int number) {
+		
+		if(number % 2 == 0)
+			return true;
+		else
+			return false;
+		
+	}
+	
 	public int squareOfNum(int number) {
 		
-		int square = number * number;
-		
-		return square;
+		return number * number;
 		
 	}
 	
 	public int cubeOfNum(int number) {
-		
-		int cube = number * number * number;
-		
-		return cube;
+
+		return number * number * number;
 		
 	}
 	
@@ -27,6 +32,44 @@ public class NumberUtils {
 			int rem = number % 10;
 			
 			sum += rem;
+			
+			number /= 10;
+			
+		}
+		
+		return sum;
+		
+	}
+	
+	public int sumOfEvenDigits(int number) {
+		
+		int sum = 0;
+		
+		while(number > 0) {
+			
+			int rem = number % 10;
+			
+			if(rem % 2 == 0)
+				sum += rem;
+			
+			number /= 10;
+			
+		}
+		
+		return sum;
+		
+	}
+	
+	public int sumOfOddDigits(int number) {
+		
+		int sum = 0;
+		
+		while(number > 0) {
+			
+			int rem = number % 10;
+			
+			if(rem % 2 != 0)
+				sum += rem;
 			
 			number /= 10;
 			
@@ -80,7 +123,7 @@ public class NumberUtils {
             
         	int rem = number % 10;
             
-        	sum += (rem * rem);
+        	sum += squareOfNum(rem);
             
         	number /= 10;
         	
@@ -98,7 +141,7 @@ public class NumberUtils {
             
         	int rem = number % 10;
             
-        	sum += (rem * rem * rem);
+        	sum += cubeOfNum(rem);
             
         	number /= 10;
         	
@@ -172,16 +215,12 @@ public class NumberUtils {
 		
 	}
 	
-	public boolean isPalindromeNumber(int number) {
+	public boolean isPalindrome(int number) {
 		
-		boolean flag = false;
-		
-		int revNum = reverseNumber(number);
-		
-		if(number == revNum)
-			flag = true;
-		
-		return flag;
+		if(reverseNumber(number) == number)
+			return true;
+		else
+			return false;
 		
 	}
 	
@@ -215,14 +254,83 @@ public class NumberUtils {
 		
 	}
 	
+	public void showAllFactors(int number) {
+		
+		System.out.println("The factors of " + number + " are : ");
+		
+		for(int i = 1; i <= number; i++) {
+
+			if(number % i == 0)
+				System.out.print(i + "\t");
+			
+		}
+		
+		System.out.println();
+		
+	}
+	
+	public void showPrimeFactors(int number) {
+		
+		System.out.println("The prime factors of " + number + " are : ");
+		
+		for(int i = 1; i <= number; i++) {
+
+			if(isPrime(i)) {
+				
+				if(number % i == 0)
+					System.out.print(i + "\t");
+				
+			}
+			
+		}
+		
+		System.out.println();
+		
+	}
+	
+	public void showPrimeFactorisation(int number) {
+
+		System.out.println("The prime factorization of " + number + " are : ");
+		
+		for(int i = 2; i <= number; i++) {
+			
+			while(number % i == 0) {
+				System.out.print(i + "\t");
+				number /= i;
+			}
+			
+		}
+		
+		System.out.println();
+		
+	}
+	
 	public int sumOfAllFactors(int number) {
 		
 		int sum = 0;
 		
 		for(int i = 1; i <= number; i++) {
 			
-			if(number % i == 0) {
+			if(number % i == 0)
 				sum += i;
+			
+		}
+		
+		return sum;
+		
+	}
+	
+	public int sumOfPrimeFactors(int number) {
+		
+		int sum = 0;
+		
+		for(int i = 1; i <= number; i++) {
+			
+			if(isPrime(i)) {
+				
+				if(number % i == 0)
+					sum += i;
+				
 			}
 			
 		}
@@ -231,7 +339,24 @@ public class NumberUtils {
 		
 	}
 	
-	public int numOfDigits(int number) {
+	public int sumOfPrimeFactorisation(int number) {
+		
+		int sum = 0;
+		
+		for(int i = 2; i <= number; i++) {
+			
+			while(number % i == 0) {
+				sum += i;
+				number /= i;
+			}
+			
+		}
+
+		return sum;
+		
+	}
+	
+	public int numOfDigits(long number) {
 		
 		int count = 0;
 		
@@ -240,6 +365,53 @@ public class NumberUtils {
 			number /= 10;
 			
 			count++;
+			
+		}
+		
+		return count;
+		
+	}
+	
+	public boolean presenceOfDigit(long number, int digit) {
+		
+		int flag = 0;
+		
+		String strDigit = Integer.toString(digit);
+		
+		String strNum = Long.toString(number);
+		
+		String numArr [] = strNum.split("");
+		
+		for(int i = 0; i < numArr.length; i++) {
+			
+			if(numArr[i].equals(strDigit)) {
+				flag = 1;
+				break;
+			}
+			
+		}
+		
+		if(flag == 1)
+			return true;
+		else
+			return false;
+		
+	}
+	
+	public int numOfOccurenceOfDigit(long number, int digit) {
+		
+		int count = 0;
+		
+		String strDigit = Integer.toString(digit);
+		
+		String strNum = Long.toString(number);
+		
+		String numArr [] = strNum.split("");
+		
+		for(int i = 0; i < numArr.length; i++) {
+			
+			if(numArr[i].equals(strDigit))
+				count++;
 			
 		}
 		
@@ -273,6 +445,105 @@ public class NumberUtils {
 
 		return sum;
 		
+	}
+	
+	public boolean isDuck(int number) {
+		
+		String strNum = Integer.toString(number);
+		
+		int counter = 0;
+		
+		for(int i = 0; i < strNum.length(); i++) {
+			
+			if(strNum.charAt(i) == '0')
+				counter++;
+			
+		}
+		
+		if(strNum.charAt(0) != '0' && counter > 0)
+			return true;
+		else
+			return false;
+		
+	}
+	
+	public boolean isUnique(int number) {
+		
+		int flag = 1;
+		
+		String strNum = Integer.toString(number);
+		
+		String numArr [] = strNum.split("");
+		
+		for(int i = 0; i < numArr.length-1; i++) {
+			
+			for(int j = i+1; j < numArr.length; j++) {
+				
+				if(numArr[i].equals(numArr[j])) {
+					flag = 0;
+					break;
+				}else
+					continue;
+				
+			}
+			
+		}
+		
+		if(flag == 1)
+			return true;
+		else
+			return false;
+		
+	}
+	
+	public boolean isSmith(int number) {
+		
+		int sum = 0;
+		
+		int temp = number;
+		
+		for(int i = 2; i <= temp; i++) {
+			
+			while(temp % i == 0) {
+				
+				sum += sumOfDigits(i);
+				temp /= i;
+				
+			}
+			
+		}
+
+		if(sum == sumOfDigits(number) && (! isPrime(number)))
+			return true;
+		else
+			return false;
+		
+	}
+	
+	public int shiftLeft(int number) {
+		
+		int digits = numOfDigits(number);
+		
+		int rem = (int) (number % Math.pow(10, digits-1));
+		int quotient = (int) (number / Math.pow(10, digits-1));
+		
+		int product = rem * 10 + quotient;
+		
+		return product;
+
+	}
+	
+	public int shiftRight(int number) {
+		
+		int digits = numOfDigits(number);
+		
+		int rem = number % 10;
+		int quotient = number / 10;
+		
+		int product = (int) (rem * Math.pow(10, digits-1) + quotient);
+		
+		return product;
+
 	}
 	
 }

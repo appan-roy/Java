@@ -1,6 +1,6 @@
 package stringDemo;
 
-public class StringOps {
+public class StringOperations {
 
 	public static void main(String[] args) {
 
@@ -62,7 +62,7 @@ public class StringOps {
 		String str12 = "heLlo WOrlD";
 		System.out.println("The uppercase is : "+str12.toUpperCase());	//HELLO WORLD
 		System.out.println("The lowercase is : "+str12.toLowerCase());	//hello world
-		
+
 	}
 
 }

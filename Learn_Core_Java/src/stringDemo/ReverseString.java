@@ -18,7 +18,7 @@ public class ReverseString {
         byte [] result = new byte [strAsByteArray.length]; 
   
         // Store result in reverse order into the result byte[] 
-        for (int i = 0; i<strAsByteArray.length; i++) 
+        for (int i = 0; i < strAsByteArray.length; i++) 
             
         	result[i] = strAsByteArray[strAsByteArray.length-1-i]; 
   

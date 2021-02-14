@@ -2,29 +2,35 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="product" key="selection"/>
+		<item value="101111001" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="sum"/>
-			<item value="x"/>
-			<item value="n2"/>
-			<item value="n1"/>
-			<item value="num"/>
-			<item value="pq1"/>
-			<item value="tree"/>
-			<item value="hs2"/>
-			<item value="hs1"/>
-			<item value="hash"/>
-			<item value="vector"/>
-			<item value="guru99Workbook"/>
-			<item value="Members"/>
-			<item value="guru99Sheet"/>
-			<item value="inputStream"/>
+			<item value="101111001"/>
+			<item value="10727505"/>
+			<item value="727642702"/>
+			<item value="1978948651"/>
+			<item value="101100000"/>
+			<item value="10000101"/>
+			<item value="100101001111101001010110"/>
+			<item value="1111101011001110"/>
+			<item value="110110101101"/>
+			<item value="1001100011100010010000"/>
+			<item value="10011000111000"/>
+			<item value="afterDate"/>
+			<item value="+"/>
+			<item value="Later"/>
+			<item value="plus"/>
 		</list>
 		<list key="replacehistory">
+			<item value="-"/>
+			<item value="Earlier"/>
+			<item value="minus"/>
+			<item value="num"/>
+			<item value="temp"/>
+			<item value="isbn"/>
 			<item value="product"/>
 			<item value="number"/>
 			<item value="number2"/>
@@ -34,12 +40,6 @@
 			<item value="ts2"/>
 			<item value="ts1"/>
 			<item value="tree"/>
-			<item value="wrkbk"/>
-			<item value="sheet"/>
-			<item value="fis"/>
-			<item value="l"/>
-			<item value="j"/>
-			<item value="k"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

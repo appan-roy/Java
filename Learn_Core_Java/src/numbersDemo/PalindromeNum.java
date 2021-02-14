@@ -21,7 +21,7 @@ public class PalindromeNum {
 		int num = sc.nextInt();
 		
 		// check the number is palindrome or not
-		if(nu.isPalindromeNumber(num))
+		if(nu.isPalindrome(num))
 			System.out.println("The number " + num + " is a palindrome number");
 		else
 			System.out.println("The number " + num + " is not a palindrome number");
