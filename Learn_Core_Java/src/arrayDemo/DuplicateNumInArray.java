@@ -35,7 +35,7 @@ public class DuplicateNumInArray {
         	}
         	
         	if(flag == 1)
-        		System.out.println("The duplicate numbers is : "+a[j]);
+        		System.out.println("The duplicate numbers are : "+a[j]);
         	
         }
 

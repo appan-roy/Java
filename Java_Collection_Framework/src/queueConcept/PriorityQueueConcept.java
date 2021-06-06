@@ -19,7 +19,7 @@ public class PriorityQueueConcept {
 		pq1.add("UFT");
 		pq1.add("Selenium");
 		pq1.add("Protractor");
-		pq1.add("Cypress");
+		pq1.add("Selenium");	// duplicate value is allowed
 		
 		//print the whole priority queue
 		System.out.println("The priority queue is : "+pq1);

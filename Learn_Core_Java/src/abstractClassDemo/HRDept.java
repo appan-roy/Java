@@ -28,7 +28,9 @@ public class HRDept extends ITDept{
 		it.salary();
 		
 	}
-
+	
+	
+	
 	
 	public void salary() {
 		

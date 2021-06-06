@@ -8,7 +8,7 @@ public class LinkedListConcept {
 	public static void main(String[] args) {
 		
 		/*
-		 * LinkedList implements the Collection interface.
+		 * LinkedList implements the List interface.
 		 * It uses a doubly linked list internally to store the elements.
 		 * It can store the duplicate elements. 
 		 * It maintains the insertion order and is not synchronized. 
