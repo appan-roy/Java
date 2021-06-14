@@ -11,7 +11,6 @@ public class HashTableConcept {
 		//HashTable is synchronized -- thread safe
 		//key-->object--hashcode-->value
 		//no null key or null value is allowed in hashtable
-		//duplicate values are ignored in hashtable, it won't be stored
 		
 		//any type of key-value pair is allowed for this hashtable...non generic type
 		Hashtable h1 = new Hashtable();
